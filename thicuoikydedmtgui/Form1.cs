@@ -17,7 +17,7 @@ namespace thicuoikydedmtgui
 {
     public partial class Form1 : Form
     {
-        string connectString = @"Data Source=hai\SQLEXPRESS;Initial Catalog=kiemtrahosonhanvien;Integrated Security=True;Encrypt=False";
+        string connectString = @"Data Source=hai\SQLEXPRESS;Initial Catalog=dmtgui;Integrated Security=True;Encrypt=False";
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adt;//cau noi giua datatable vs sql server
@@ -82,33 +82,32 @@ namespace thicuoikydedmtgui
                 SqlCommand command = new SqlCommand(query, con);
 
                 SqlDataReader reader = command.ExecuteReader();
+                List<PhongBan> dsPhongBan = new List<PhongBan>();
+
                 while (reader.Read())
                 {
-                    // Thêm MaPhongBan và TenPhongBan vào ComboBox (giả sử ComboBox là comboBoxPhongBan)
-                    // comboBoxPhongBan.Items.Add(new { MaPhongBan = reader["MaPhongBan"], TenPhongBan = reader["TenPhongBan"].ToString() });
-                    comboBoxPhongBan.Items.Add(reader["TenPhongBan"]);
+                    string maPB =reader["MaPhongBan"].ToString();
+                    string tenPB = reader["TenPhongBan"].ToString();
 
+                    PhongBan phongBan = new PhongBan(maPB, tenPB);
+                    dsPhongBan.Add(phongBan);
                 }
                 reader.Close();
-                comboBoxPhongBan.DisplayMember = "TenPhongBan";
 
-
-
+                comboBoxPhongBan.DataSource = dsPhongBan;
+                comboBoxPhongBan.DisplayMember = "TenPhongBan"; // Hiển thị tên
+                comboBoxPhongBan.ValueMember = "MaPhongBan";   // Giá trị thực là mã phòng ban
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách phòng ban: " + ex.Message);
             }
             finally
             {
                 con.Close();
             }
-
-
-
-
-
-
-
-
-
         }
+
 
 
 
@@ -183,7 +182,8 @@ namespace thicuoikydedmtgui
             // Kiểm tra xem người dùng có chọn phòng ban trong ComboBox không
 
 
-            int maPhongBan = (int)comboBoxPhongBan.SelectedIndex + 1;
+            string maPhongBan = (string)comboBoxPhongBan.SelectedValue;
+
             // Tiếp tục xử lý
 
 
@@ -254,8 +254,8 @@ namespace thicuoikydedmtgui
                 anh = currentImage; // Giữ nguyên ảnh cũ nếu không chọn ảnh mới
             }
 
-            int maPhongBan = (int)comboBoxPhongBan.SelectedIndex;
-            maPhongBan++;
+            string maPhongBan = (string)comboBoxPhongBan.SelectedValue;
+
 
             try
             {
@@ -388,9 +388,9 @@ namespace thicuoikydedmtgui
                 // Hiển thị lại ComboBox với Phòng Ban đã được chọn
                 //int maPhongBan = Convert.ToInt32(row.Cells["MaPhongBan"].Value); // Lấy MaPhongBan từ dòng hiện tại
 
-                int maPhongBan = Convert.ToInt32(maPB);
+                string maPhongBan =maPB;
                 // Đặt giá trị cho ComboBox
-                comboBoxPhongBan.SelectedIndex = maPhongBan - 1;
+                comboBoxPhongBan.SelectedValue = maPhongBan;
 
                 // Kích hoạt các nút
                 btnSua.Enabled = true;

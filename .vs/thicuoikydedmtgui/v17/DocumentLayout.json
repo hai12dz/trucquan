@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|solutionrelative:thicuoikydedmtgui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|e:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|E:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|solutionrelative:thicuoikydedmtgui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|e:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|E:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|solutionrelative:thicuoikydedmtgui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|e:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D169818E-7ABC-4E43-A56D-D1AC387DD71A}|thicuoikydedmtgui\\thicuoikydedmtgui.csproj|solutionrelative:thicuoikydedmtgui\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhongBan.cs",
+              "DocumentMoniker": "E:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\PhongBan.cs",
+              "RelativeDocumentMoniker": "thicuoikydedmtgui\\PhongBan.cs",
+              "ToolTip": "E:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\PhongBan.cs",
+              "RelativeToolTip": "thicuoikydedmtgui\\PhongBan.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T15:41:29.331Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "thicuoikydedmtgui\\Form1.cs",
               "ToolTip": "E:\\zalo\\trucquan\\thicuoikydedmtgui\\thicuoikydedmtgui\\Form1.cs",
               "RelativeToolTip": "thicuoikydedmtgui\\Form1.cs",
-              "ViewState": "AgIAADQCAAAAAAAAAAAiwD4CAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQCAAAAAAAAAAAiwFACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T12:58:56.158Z",
               "EditorCaption": ""
